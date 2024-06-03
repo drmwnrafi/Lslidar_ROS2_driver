@@ -8,14 +8,14 @@
     msop_port: 2368                                         # Radar destination port number
     difop_port: 2369                                        # Radar source port number
     lidar_name: N10                                         # Radar selection:M10 M10_P M10_PLUS M10_GPS N10
-    angle_disable_min: 90.0                             # Angle cropping start value
-    angle_disable_max: -90.0                                  # End value of angle cropping
+    angle_disable_min: 0.0                             # Angle cropping start value
+    angle_disable_max: 0.0                                  # End value of angle cropping
     min_range: 0.0                                          # Minimum radar receiving distance
     max_range: 200.0                                        # Maximum radar receiving distance
     use_gps_ts: false                                       # Whether the radar uses GPS timing
     scan_topic: /scan                                       # Set laser data topic name
     interface_selection: serial                             # Interface selection > "net" for network port, "serial" for the serial port.
-    serial_port_: /dev/ttyUSB0                              # Serial port number when connecting to the serial port
+    serial_port_: /dev/ttyUSB2                               # Serial port number when connecting to the serial port
     high_reflection: false                                  # M10_P radar needs to fill in this value. If you are unsure, please contact technical support.
     compensation: false				            # M10 series whether to use angle compensation function
     pubScan: true                                           # Whether to publish the scan topic
